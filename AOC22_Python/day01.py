@@ -7,9 +7,9 @@ class Day01:
 
     def __init__(self, test=False):
         input_path = self.TEST_FILE if test else self.INPUT_FILE
-        self.inputs = []
+        self.inputs: list[list[int]] = []
         with open(input_path, 'r') as infile:
-            calories = []
+            calories: list[int] = []
             for line in infile:
                 stripped = line.strip()
                 if len(stripped) == 0:

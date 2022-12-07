@@ -19,7 +19,7 @@ class Day02:
 
     def __init__(self, test=False):
         input_path = self.TEST_FILE if test else self.INPUT_FILE
-        self.inputs = []
+        self.inputs: list[tuple[str, str]] = []
         with open(input_path) as infile:
             for line in infile:
                 self.inputs.append((line[0], line[2]))
